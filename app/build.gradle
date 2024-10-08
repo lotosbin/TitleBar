@@ -40,13 +40,7 @@ android {
             signingConfig signingConfigs.config
         }
     }
-
-    applicationVariants.all { variant ->
-        // apk 输出文件名配置
-        variant.outputs.all { output ->
-            outputFileName = rootProject.getName() + '.apk'
-        }
-    }
+    namespace 'com.hjq.bar.demo'
 }
 
 dependencies {
